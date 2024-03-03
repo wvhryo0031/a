@@ -1,0 +1,141 @@
+### AUTOFILL PROFILES ###,,,,,,
+Profile ID,Name,Site,Hotkey,,,
+### AUTOFILL RULES ###,,,,,,
+Rule ID,Type,Name,Value,Site,Mode,Profile
+r31,4,"","function activate() {
+  const elactivate = document.querySelector('[class=""button docs-sign-in""]');
+  if (elactivate) {
+      elactivate.click();
+  } else {
+      setTimeout(activate, 1000)
+  }
+}
+activate();","learn.microsoft.com/en-us/training/modules/introduction-to-azure-app-service/7-create-html-web-app",1,
+r6,4,"","function waitclicks() {
+    const elws = document.querySelector('[id=""idSIButton9""]');
+    const elcs = document.getElementById(""signup"");
+    if (elws && elcs) {
+        elcs.click();
+    } else {
+        setTimeout(waitclicks, 1000);
+    }
+}
+waitclicks();
+","login.microsoftonline.com/common/oauth2/v2.0/authorize",1,
+r9,0,"^MemberName$","{$13}{#4}@hotmail.com","signup.live.com/signup",1,
+r10,4,"","function waitclickm() {
+    const elwm = document.querySelector('[id=""MemberName""]').value;
+    const elcm = document.querySelector('#iSignupAction');
+    if (elwm !== """") {
+        elcm.click();
+    } else {
+        setTimeout(waitclickm, 1000);
+    }
+}
+waitclickm();","signup.live.com/signup",1,
+r11,1,"^Password$","{$6}@{#6}","signup.live.com/signup",1,
+r12,4,"","function waitclickp() {
+    const elwp = document.querySelector('div.row.form-group');
+    const elcp = document.querySelector('#iSignupAction');
+    if (elwp && elcp) {
+        setTimeout(() => { elcp.click(); }, 1000);
+    } else {
+        setTimeout(waitclickp, 1000);
+        //function showAlert() { window.alert(""Your message here""); setTimeout(function() { window.close(); }, 3000); } showAlert();
+    }
+}
+waitclickp();","signup.live.com/signup",1,
+r15,0,"^BirthYear$","198{#1}","signup.live.com/signup",1,
+r14,2,"^BirthMonth$","?","signup.live.com/signup",1,
+r13,2,"^BirthDay$","?","signup.live.com/signup",1,
+r16,4,"","function waitclickbirth() {
+    const elbirth = document.querySelector('[id=""BirthYear""]');
+    const elcbi = document.querySelector('#iSignupAction');
+    if (elbirth && elcbi) {
+        setTimeout(() => { elcbi.click(); }, 1000);
+    } else {
+        setTimeout(waitclickbirth, 1000);
+    }
+}
+waitclickbirth();","signup.live.com/signup",1,
+r30,4,"","function clickbot() {
+  const bot = document.querySelector('[data-theme=""home.verifyButton""]');
+  if (bot) {
+      bot.click();
+  } else {
+      setTimeout(clickbot, 1000);
+  }
+}
+clickbot();","signup.live.com/signup",1,
+r18,4,"","function waitclickcfn() {
+    const elcfn = document.querySelector('#acct-confirmation-next');
+    if (elcfn) {
+        setTimeout (() => { elcfn.click(); }, 1000);
+    } else {
+        setTimeout(waitclickcfn, 1000);
+    }
+}
+waitclickcfn();","learn.microsoft.com/en-us/users/register",1,
+r19,0,"^display-name$","{$5}{#3}","learn.microsoft.com/en-us/users/register",1,
+r20,4,"","function clickpc() {
+    const elpc = document.getElementById(""profile-creation-next"");
+    if (elpc) {
+        setTimeout(() => { elpc.click(); }, 1000);
+    } else {
+        setTimeout(clickpc, 1000);
+    }
+}
+clickpc();
+","learn.microsoft.com/en-us/users/register",1,
+r21,4,"","function ClickSkip() {
+    if (document.getElementById(""email-notifs-skip"")) {
+       document.getElementById(""email-notifs-skip"").click();
+    } else {
+        setTimeout(ClickSkip, 1000);
+    }
+}
+ClickSkip();","learn.microsoft.com/en-us/users/register",1,
+r33,4,"","function notnow() {
+    if (document.querySelector('[class=""link-button font-size-sm font-weight-semibold margin-left-xs""]')) {
+        location.reload();
+    } else {
+        setTimeout(notnow, 1000);
+    }
+}
+notnow();
+","learn.microsoft.com/en-us/users/register",1,
+r26,4,"","setTimeout(()=>{document.querySelector('#idSIButton9').click();},1000);","login.microsoftonline.com/common/federation/oauth2msa",1,
+r35,4,"","function review() {
+  const elreview = document.querySelector('[data-bi-name=""tenant-invite""]');
+  if (elreview) {
+      elreview.click();
+  } else {
+      setTimeout(review, 1000)
+  }
+}
+review();","learn.microsoft.com/en-us/training/modules/introduction-to-azure-app-service/7-create-html-web-app",1,
+### AUTOFILL OPTIONS ###,,,,,,
+advanced,"[]",,,,,
+exceptions,"[]",,,,,
+textclips,"[]",,,,,
+variables,"[]",,,,,
+activecat,1,,,,,
+attributesoff,0,,,,,
+autoimport,1,,,,,
+backup,0,30,,,,
+badge,1,,,,,
+closeinfobar,1,1,,,,
+debug,0,,,,,
+delay,0,0.5,,,,
+filtercats,0,,,,,
+fluid,1,,,,,
+hidebackup,0,,,,,
+manual,0,,,,,
+mask,1,,,,,
+menu,1,,,,,
+overwrite,1,,,,,
+sitefilters,1,,,,,
+skiphidden,0,,,,,
+sound,0,,,,,
+vars,1,,,,,
+voice,0,1,,,,
