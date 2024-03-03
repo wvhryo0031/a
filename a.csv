@@ -61,7 +61,7 @@ waitclickbirth();","signup.live.com/signup",1,
 r30,4,"","function clickbot() {
   const bot = document.querySelector('[data-theme=""home.verifyButton""]');
   if (bot) {
-      bot.click();
+      setTimeout(() => { bot.click(); }, 2000);
   } else {
       setTimeout(clickbot, 1000);
   }
@@ -105,10 +105,19 @@ r33,4,"","function notnow() {
 notnow();
 ","learn.microsoft.com/en-us/users/register",1,
 r26,4,"","setTimeout(()=>{document.querySelector('#idSIButton9').click();},1000);","login.microsoftonline.com/common/federation/oauth2msa",1,
+r34,4,"","function verif() {
+  const elver = document.querySelector('[aria-describedby=""descriptionVerify""]');
+  if (elver) {
+      setTimeout(() => { elver.click(); }, 2000);
+  } else {
+      setTimeout(verif, 1000)
+  }
+}
+verif();","learn.microsoft.com/en-us/training/modules/introduction-to-azure-app-service/7-create-html-web-app",1,
 r35,4,"","function review() {
   const elreview = document.querySelector('[data-bi-name=""tenant-invite""]');
   if (elreview) {
-      elreview.click();
+      setTimeout(() => { elreview.click(); }, 2000);
   } else {
       setTimeout(review, 1000)
   }
