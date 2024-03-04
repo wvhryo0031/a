@@ -117,7 +117,7 @@ verif();","learn.microsoft.com/en-us/training/modules/introduction-to-azure-app-
 r35,4,"","function review() {
   const elreview = document.querySelector('[data-bi-name=""tenant-invite""]');
   if (elreview) {
-      setTimeout(() => { elreview.click(); }, 2000);
+      setTimeout(() => { elreview.click(); }, 1000);
   } else {
       setTimeout(review, 1000)
   }
